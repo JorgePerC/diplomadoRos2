@@ -38,4 +38,11 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 
 sudo apt update && sudo apt install ros-dev-tools
 
+echo $line Installing ROS $line
+
+sudo apt update && sudo apt upgrade
+
+sudo apt install -y ros-jazzy-desktop
+
+
 echo $line Alles gut! $line
